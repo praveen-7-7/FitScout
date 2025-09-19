@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — FitScout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav container">
+    <div class="brand"><a href="home.html"><img src="logo.svg" alt="FitScout" class="nav-logo"> FitScout</a></div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a id="logoutBtn4" href="#">Logout</a></li>
+      <li><button id="themeToggle" class="btn ghost" title="Toggle theme">🌗</button></li>
+    </ul>
+  </nav>
+
+  <main class="container dashboard-grid">
+    <section class="history">
+      <h2>Test History</h2>
+      <div class="history-cards" id="historyCards">
+        <!-- JS will inject dummy history cards -->
+      </div>
+    </section>
+
+    <aside class="stats">
+      <h3>Progress</h3>
+      <div class="progress-wrap">
+        <div class="progress" id="progressBar"><span style="width:0%"></span></div>
+        <p class="muted">Improvement: <strong id="improveVal">72%</strong></p>
+      </div>
+
+      <h3>Badges</h3>
+      <div class="badges">
+        <div class="badge gold">🥇<span>Gold</span></div>
+        <div class="badge silver">🥈<span>Silver</span></div>
+        <div class="badge bronze">🥉<span>Bronze</span></div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

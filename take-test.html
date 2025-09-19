@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Take Test — FitScout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav container">
+    <div class="brand"><a href="home.html"><img src="logo.svg" alt="FitScout" class="nav-logo"> FitScout</a></div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a id="logoutBtn2" href="#">Logout</a></li>
+      <li><button id="themeToggle" class="btn ghost" title="Toggle theme">🌗</button></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="upload-card">
+      <h2>Upload Your Performance</h2>
+      <p class="muted">We analyze technique and output actionable metrics.</p>
+      <label class="file-upload">
+        <input id="videoInput" type="file" accept="video/*">
+        <span class="btn primary">Choose Video</span>
+      </label>
+
+      <div id="analyzer" class="analyzer hidden">
+        <div class="loader"></div>
+        <p>Analyzing Performance...</p>
+      </div>
+
+      <div id="results" class="results hidden">
+        <h3>Results</h3>
+        <div class="result-card">
+          <div class="result-row"><div>Vertical Jump</div><div class="result-val">45 cm</div></div>
+          <div class="progress"><span data-target="65" style="width:0%"></span></div>
+        </div>
+        <div class="result-card">
+          <div class="result-row"><div>Sit-ups</div><div class="result-val">20 reps</div></div>
+          <div class="progress"><span data-target="55" style="width:0%"></span></div>
+        </div>
+        <div class="result-card">
+          <div class="result-row"><div>Sprint 20m</div><div class="result-val">3.2 s</div></div>
+          <div class="progress"><span data-target="72" style="width:0%"></span></div>
+        </div>
+        <div class="submit-row" style="margin-top:14px;text-align:center">
+          <button id="submitVideo" class="btn primary">Submit Video</button>
+          <div id="submitMsg" class="muted" style="margin-top:8px"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

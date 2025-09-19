@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Practice Mode — FitScout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav container">
+    <div class="brand"><a href="home.html"><img src="logo.svg" alt="FitScout" class="nav-logo"> FitScout</a></div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a id="logoutBtn3" href="#">Logout</a></li>
+      <li><button id="themeToggle" class="btn ghost" title="Toggle theme">🌗</button></li>
+    </ul>
+  </nav>
+
+  <main class="container practice">
+    <section class="cam-card">
+      <h2 id="practiceTitle">Practice Mode</h2>
+      <p id="practiceDesc" class="muted">Sport-specific practice and AI feedback.</p>
+      <video id="preview" autoplay playsinline muted></video>
+      <div class="controls">
+        <button id="startBtn" class="btn primary">Start</button>
+        <button id="stopBtn" class="btn ghost">Stop</button>
+      </div>
+  <div id="feedback" class="feedback">Keep Going!</div>
+  <p class="muted" style="margin-top:8px">This demo uses your device camera. No video is uploaded.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

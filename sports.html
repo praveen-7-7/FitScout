@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Choose Sport — FitScout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav container">
+    <div class="brand"><a href="home.html"><img src="logo.svg" alt="FitScout" class="nav-logo"> FitScout</a></div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+      <li><a id="logoutBtn_sports" href="#">Logout</a></li>
+      <li><button id="themeToggle" class="btn ghost" title="Toggle theme">🌗</button></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h2>Choose Your Sport for Practice</h2>
+    <section class="cards">
+      <a class="card" href="practice.html?sport=football"><h3>Football</h3><p>Dribble & Jump Detection</p></a>
+      <a class="card" href="practice.html?sport=basketball"><h3>Basketball</h3><p>Jump Shot Practice</p></a>
+      <a class="card" href="practice.html?sport=athletics"><h3>Athletics</h3><p>Sprint Start Posture</p></a>
+      <a class="card" href="practice.html?sport=cricket"><h3>Cricket</h3><p>Batting Swing Posture</p></a>
+      <a class="card" href="practice.html?sport=general"><h3>General Fitness</h3><p>Sit-ups / Push-ups / Jacks</p></a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

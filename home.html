@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — FitScout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav container">
+    <div class="brand"><a href="home.html"><img src="logo.svg" alt="FitScout" class="nav-logo"> FitScout</a></div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a id="logoutBtn" href="#">Logout</a></li>
+      <li><button id="themeToggle" class="btn ghost" title="Toggle theme">🌗</button></li>
+    </ul>
+  </nav>
+
+  <main class="container home-grid">
+    <header class="welcome">
+      <h1 id="welcomeMsg">Welcome, Athlete</h1>
+      <p class="muted">Track your progress and jump into practice sessions.</p>
+      <div class="welcome-cta">
+        <a class="btn primary" href="take-test.html">Take Test</a>
+        <a class="btn ghost" href="sports.html">Explore Practice</a>
+        <a class="btn" href="leaderboard.html">Leaderboard</a>
+      </div>
+    </header>
+    <section class="big-cards">
+      <a class="big-card" href="take-test.html">
+        <div class="card-icon">🎥</div>
+        <h2>Take Test</h2>
+        <p>Upload video of performance</p>
+      </a>
+
+      <a class="big-card" href="practice.html">
+        <div class="card-icon">🏃</div>
+        <h2>Practice Mode</h2>
+        <p>Open live camera practice</p>
+      </a>
+    </section>
+
+    <aside class="panel">
+      <h3>Quick Tips</h3>
+      <ul>
+        <li>Warm up before tests</li>
+        <li>Ensure good lighting for uploads</li>
+        <li>Practice regularly to improve</li>
+      </ul>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
